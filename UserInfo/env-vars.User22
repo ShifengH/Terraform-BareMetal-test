@@ -1,0 +1,19 @@
+### Authentication details
+export TF_VAR_tenancy_ocid="ocid1.tenancy.oc1..aaaaaaaaqjvww6xclqb3ra3ir5l22vj3yxagbgg4uglrpeyawk4gazip2eva"
+export TF_VAR_user_ocid="ocid1.user.oc1..aaaaaaaavy3lk7nl7airrmi7awffkrlpekkdhnllf6nux7fg33ujywljjbea"
+export TF_VAR_fingerprint="64:44:4a:ec:43:f4:8b:60:c1:60:bd:37:0d:82:8e:ae"
+export TF_VAR_private_key_path="/root/Terraform/workplace/KeyFile/bmcs_api_key.pem"
+
+#### Compartment
+export TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaatldrxwewji6xe3uvch7wmykloqfqodenbzo2p2hmagkwxcq4eahq"
+
+#### Public/private keys used on the instance
+export TF_VAR_ssh_public_key=$(cat /root/Terraform/workplace/KeyFile/id_rsa.pub)
+export TF_VAR_ssh_private_key=$(cat /root/Terraform/workplace/KeyFile/id_rsa)
+
+###Object#####
+export TF_VAR_namespace_name="ObjectNameSpace_test"
+
+### Specific to this example
+#### Choose a subnet that exists in the AD and compartment you are launching the instance in
+#export TF_VAR_SubnetOCID="ocid1.subnet.oc1.phx.aaaaaaaaloqi26n2wbis43nkwwnerqicv3s4xr3mpoqxr6pho5zbjfqij3gq"
